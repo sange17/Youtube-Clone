@@ -9,15 +9,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
-<!-- fab fa-youtube
-fas fa-search
-fas fa-ellipsis-v
-fas fa-caret-down
-fas fa-thumbs-up
-fas fa-thumbs-down
-fas fa-share
-fas fa-plus
-fab fa-font-awesome-flag -->
     <body>
         <!-- Header -->
         <header>
@@ -26,83 +17,204 @@ fab fa-font-awesome-flag -->
                 <span class="title">Youtube</span>
             </div>
             <div class="icons">
+                <i class="far fa-bell"></i>
                 <i class="fas fa-search"></i>
-                <i class="fas fa-ellipsis-v"></i>
-            </div>
+                <div class="imgdiv"><img src="/image/owl.jpg" alt=""></div>
+           </div>
         </header>
 
-        <!-- Video Player-->
-        <section class="player">
-            <video controls src="video/testvideo.mp4"></video>
-        </section>
-
-        <div class="infoAndUpNext">
-            <!-- Video Info -->
-            <section class="info">
-                <!-- Metadata -->
-                <div class="metadata">
-                    <ul class="hashtags">
-                        <li>#YoutubeCoding</li>
-                        <li>#YoutubeCoders</li>
-                        <li>#Tack</li>
-                    </ul>
-                    <div class="titleAndButton">
-                        <span class="title clamp">
-                            Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라
-                            만들기 | HTML, CSS, Javascript
-                        </span>
-                        <button class="moreBtn">
-                            <i class="fas fa-caret-down"></i>
-                        </button>
-                    </div>
-                    <span class="views">1M views 1 month ago</span>
-                </div>
-                <!-- Actions -->
-                <ul class="actions">
-                    <li>
-                        <button>
-                            <i class="active fas fa-thumbs-up"></i>
-                            <span>1K</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            <i class="fas fa-thumbs-down"></i>
-                            <span>0</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            <i class="fas fa-share"></i>
-                            <span>Share</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            <i class="fas fa-plus"></i>
-                            <span>Sava</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button>
-                            <i class="fab fa-font-awesome-flag"></i>
-                            <span>Report</span>
-                        </button>
-                    </li>
-                </ul>
-                <!-- Channel Description -->
-                <div class="channel">
+        <div class="videoAndInfoAndUpnext">
+            <div class="videoAndInfo">
+                <!-- Video Player-->
+                <section class="player">
+                    <video controls src="video/testvideo.mp4"></video>
+                </section>
+        
+                <!-- Video Info -->
+                <section class="info">
+                    <!-- Metadata -->
                     <div class="metadata">
-                        <img src="image/owl.jpg" alt="">
-                        <div class="info">
-                            <span class="name">클론코딩 by Tack</span>
-                            <span class="subscribers">1M subscribers</span>
+                        <ul class="hashtags">
+                            <li>#YoutubeCoding&nbsp;</li>
+                            <li>#YoutubeCoders&nbsp;</li>
+                            <li>#Tack</li>
+                        </ul>
+                        <div class="titleAndButton">
+                            <span class="title clamp">
+                                Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라
+                                만들기 | HTML, CSS, Javascript를 사용하여 만들어 봐요~~~
+                            </span>
+                            <button class="moreBtn">
+                                <i class="fas fa-caret-down"></i>
+                            </button>
+                        </div>
+                        <span class="views">1M views 1 month ago</span>
+                    </div>
+        
+                    <!-- Actions -->
+                    <ul class="actions">
+                        <li>
+                            <button>
+                                <i class="active fas fa-thumbs-up"></i>
+                                <span>1K</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="fas fa-thumbs-down"></i>
+                                <span>0</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="fas fa-plus"></i>
+                                <span>Sava</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="fab fa-font-awesome-flag"></i>
+                                <span>Report</span>
+                            </button>
+                        </li>
+                    </ul>
+        
+                    <!-- Channel Description -->
+                    <div class="channel">
+                        <div class="metadata">
+                            <img src="image/owl.jpg" alt="">
+                            <div class="info">
+                                <span class="name">클론코딩 by Tack</span>
+                                <span class="subscribers">1M subscribers</span>
+                            </div>
+                        </div>
+                        <button class="subscribe">subscribe</button>
+                    </div>
+
+                    <!-- Comment -->
+                    <div class="commentBox">
+                        <div class="commentBoxBar">
+                            <div class="commentCountBox">
+                                <span class="commentText">댓글&nbsp;</span>
+                                <span class="commentCount">823</span>
+                            </div>
+                            <i class="fas fa-sort"></i>
+                        </div>
+                        <div class="commentImgBoxAndcommentArea">
+                            <div class="commentImgBox">
+                                <div class="commentImg"><img src="/image/owl.jpg" alt=""></div>
+                            </div>
+                            <div class="commentArea">
+                                <div class="commentIdAndWriteTime">
+                                    <span class="Id">클론코딩 by Tack</span>
+                                    <span class="WriteTime">·1day ago</span>
+                                </div>
+                                <div class="commentBoxTop">
+                                    <span class="comment">HTML, CSS, Javascript로 유튜브 클론 코딩을 해보아요~ 처음이라 어려워도 아자아자 파이팅!</span>
+                                </div>
+                                <div class="commentBoxBottom">
+                                    <i class="active fas fa-thumbs-up"></i>
+                                    <span class="commentLike">123</span>
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <span class="commentHate"></span>
+                                    <span class="cocoment">답글</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentImgBoxAndcommentArea">
+                            <div class="commentImgBox">
+                                <div class="commentImg"><img src="/image/owl.jpg" alt=""></div>
+                            </div>
+                            <div class="commentArea">
+                                <div class="commentIdAndWriteTime">
+                                    <span class="Id">클론코딩 by Tack</span>
+                                    <span class="WriteTime">·1day ago</span>
+                                </div>
+                                <div class="commentBoxTop">
+                                    <span class="comment">1!</span>
+                                </div>
+                                <div class="commentBoxBottom">
+                                    <i class="active fas fa-thumbs-up"></i>
+                                    <span class="commentLike">123</span>
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <span class="commentHate"></span>
+                                    <span class="cocoment">답글</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentImgBoxAndcommentArea">
+                            <div class="commentImgBox">
+                                <div class="commentImg"><img src="/image/owl.jpg" alt=""></div>
+                            </div>
+                            <div class="commentArea">
+                                <div class="commentIdAndWriteTime">
+                                    <span class="Id">클론코딩 by Tack</span>
+                                    <span class="WriteTime">·1day ago</span>
+                                </div>
+                                <div class="commentBoxTop">
+                                    <span class="comment">2!</span>
+                                </div>
+                                <div class="commentBoxBottom">
+                                    <i class="active fas fa-thumbs-up"></i>
+                                    <span class="commentLike">123</span>
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <span class="commentHate"></span>
+                                    <span class="cocoment">답글</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentImgBoxAndcommentArea">
+                            <div class="commentImgBox">
+                                <div class="commentImg"><img src="/image/owl.jpg" alt=""></div>
+                            </div>
+                            <div class="commentArea">
+                                <div class="commentIdAndWriteTime">
+                                    <span class="Id">클론코딩 by Tack</span>
+                                    <span class="WriteTime">·1day ago</span>
+                                </div>
+                                <div class="commentBoxTop">
+                                    <span class="comment">3!</span>
+                                </div>
+                                <div class="commentBoxBottom">
+                                    <i class="active fas fa-thumbs-up"></i>
+                                    <span class="commentLike">123</span>
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <span class="commentHate"></span>
+                                    <span class="cocoment">답글</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentImgBoxAndcommentArea">
+                            <div class="commentImgBox">
+                                <div class="commentImg"><img src="/image/owl.jpg" alt=""></div>
+                            </div>
+                            <div class="commentArea">
+                                <div class="commentIdAndWriteTime">
+                                    <span class="Id">클론코딩 by Tack</span>
+                                    <span class="WriteTime">·1day ago</span>
+                                </div>
+                                <div class="commentBoxTop">
+                                    <span class="comment">4!</span>
+                                </div>
+                                <div class="commentBoxBottom">
+                                    <i class="active fas fa-thumbs-up"></i>
+                                    <span class="commentLike">123</span>
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <span class="commentHate"></span>
+                                    <span class="cocoment">답글</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <button class="subscribe">subscribe</button>
-                </div>
-            </section>
-
+                </section>
+            </div>
+            
             <!-- UpNext -->
             <section class="UpNext">
                 <span class="title">Up next</span>
@@ -133,6 +245,72 @@ fab fa-font-awesome-flag -->
                         <div class="img"><img src="image/nature3.jpg" alt=""></div>
                         <div class="info">
                             <span class="title">신비로운 자연 3</span>
+                            <span class="name">Tack</span>
+                            <span class="views">90k views</span>
+                        </div>
+                        <button class="moreBtn">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="img"><img src="image/nature1.jpg" alt=""></div>
+                        <div class="info">
+                            <span class="title">신비로운 자연 1-1</span>
+                            <span class="name">Tack</span>
+                            <span class="views">82k views</span>
+                        </div>
+                        <button class="moreBtn">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="img"><img src="image/nature2.jpg" alt=""></div>
+                        <div class="info">
+                            <span class="title">신비로운 자연 2-1</span>
+                            <span class="name">Tack</span>
+                            <span class="views">71k views</span>
+                        </div>
+                        <button class="moreBtn">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="img"><img src="image/nature3.jpg" alt=""></div>
+                        <div class="info">
+                            <span class="title">신비로운 자연 3-1</span>
+                            <span class="name">Tack</span>
+                            <span class="views">90k views</span>
+                        </div>
+                        <button class="moreBtn">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="img"><img src="image/nature1.jpg" alt=""></div>
+                        <div class="info">
+                            <span class="title">신비로운 자연 1-2</span>
+                            <span class="name">Tack</span>
+                            <span class="views">82k views</span>
+                        </div>
+                        <button class="moreBtn">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="img"><img src="image/nature2.jpg" alt=""></div>
+                        <div class="info">
+                            <span class="title">신비로운 자연 2</span>
+                            <span class="name">Tack</span>
+                            <span class="views">71k views</span>
+                        </div>
+                        <button class="moreBtn">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="img"><img src="image/nature3.jpg" alt=""></div>
+                        <div class="info">
+                            <span class="title">신비로운 자연 3-2</span>
                             <span class="name">Tack</span>
                             <span class="views">90k views</span>
                         </div>

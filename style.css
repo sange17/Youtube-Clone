@@ -6,6 +6,7 @@
   --red-color: #ff0000;
   --gray-dark-color: #909090;
   --gray-light-color: #e0e0e0;
+  --gray-morelight-color: #f5f5f5;
 
   /* Size */
   --padding: 12px;
@@ -26,6 +27,8 @@
 
 body {
   font-family: Roboto;
+  margin: 0px;
+  padding: 0px;
 }
 
 ul {
@@ -37,42 +40,71 @@ button:focus {
   border: none;
   cursor: pointer;
   outline: none;
+  background-color: white;
+  align-items: center;
 }
 
 /* Header */
 header {
   display: flex;
+  position: sticky;
+  top: 0;
   justify-content: space-between;
-  padding: var(--padding);
-  background-color: var(--black-color);
-  color: var(--white-color);
+  padding: var(--padding) 24px;
+  margin-bottom: var(--padding);
+  background-color: var(--gray-morelight-color);
+  color: var(--black-color);
 }
 
 header .logo {
-  font-size: var(--red-color);
+  font-size: 18px;
 }
 
-header .icons .fa-search {
+header .logo i {
+  color: var(--red-color);
+}
+
+header .icons {
+  display: flex;
+  align-items: center;
+}
+
+header .icons .fa-search,
+.fa-bell {
   margin-right: var(--padding);
+  font-size: 20px;
+}
+
+header .icons img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+header .icons .imgdiv {
+  width: 24px;
+  height: 24px;
 }
 
 /* Video Player */
 .player {
-  position: sticky;
-  top: 0;
   text-align: center;
   background-color: var(--black-color);
 }
 
 .player video {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   max-width: 1000px;
 }
 
 /* Video Info */
 body > .info {
   paddin: var(--padding);
+}
+
+.info .metadata {
+  margin: 12px;
 }
 
 .info .metadata .hashtags {
@@ -140,15 +172,18 @@ body > .info {
 
 /* CHannel Description */
 .channel {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid var(--gray-light-color);
   border-bottom: 1px solid var(--gray-light-color);
+  padding: 4px var(--padding);
 }
 
 .channel .metadata {
   display: flex;
   align-items: center;
+  margin: 0px;
 }
 
 .channel .metadata img {
@@ -160,6 +195,7 @@ body > .info {
 .channel .metadata .info {
   display: flex;
   flex-direction: column;
+  margin-left: 8px;
 }
 
 .channel .metadata .info .name {
@@ -175,6 +211,82 @@ body > .info {
   text-transform: uppercase;
   color: var(--red-color);
   font-size: var(--font-medium);
+}
+
+/* Comment */
+.commentBox {
+  border-bottom: 1px solid var(--gray-light-color);
+  padding: 4px var(--padding);
+}
+
+.commentImgBoxAndcommentArea {
+  display: flex;
+}
+
+.commentBox .commentBoxBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.commentBox .commentBoxBar .commentCountBox .commentText {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.commentBox .commentBoxBar .commentCountBox .commentCount {
+  font-size: 13px;
+}
+
+.commentIdAndWriteTime {
+  font-size: var(--font-micro);
+}
+
+.commentBox .commentBoxTop {
+  display: flex;
+}
+
+.commentBox .commentImgBox img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.commentBox .commentBoxTop .comment {
+  font-size: var(--font-small);
+}
+
+.commentBox .commentImgBoxAndcommentArea {
+  margin-bottom: 16px;
+}
+
+.commentBox .commentImgBoxAndcommentArea .commentArea .commentBoxBottom i {
+  color: var(--gray-dark-color);
+  padding: 8px;
+  font-size: var(--font-small);
+}
+
+.commentBox
+  .commentImgBoxAndcommentArea
+  .commentArea
+  .commentBoxBottom
+  .cocoment {
+  color: var(--gray-dark-color);
+  padding: 8px 16px;
+  font-size: var(--font-small);
+}
+
+.commentBox
+  .commentImgBoxAndcommentArea
+  .commentArea
+  .commentBoxBottom
+  .commentLike {
+  color: var(--gray-dark-color);
+  font-size: var(--font-small);
+  margin-right: 4px;
 }
 
 /* Up Next */
@@ -207,6 +319,7 @@ body > .info {
 }
 
 .UpNext .item .moreBtn {
+  height: 100%;
   flex: 1 1 5%;
 }
 
@@ -225,14 +338,52 @@ body > .info {
   color: var(--gray-dark-color);
 }
 
-.infoAndUpNext {
+.videoAndInfoAndUpnext {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 0px 80px;
 }
 
-@media screen and (min-width: 768px) {
-  .infoAndUpNext {
-    flex-direction: row;
-    margin: var(--padding) 0;
+.videoAndInfo {
+  width: 65%;
+}
+
+.UpNext {
+  width: 35%;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--gray-morelight-color);
+    color: var(--black-color);
+  }
+
+  .videoAndInfoAndUpnext {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .videoAndInfoAndUpnext .videoAndInfoAndUpnext .player {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: var(--black-color);
+  }
+
+  .videoAndInfo {
+    width: 100%;
+  }
+
+  .UpNext {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .videoAndInfoAndUpnext {
+    margin: 0px 10px;
   }
 }
