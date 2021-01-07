@@ -1,2 +1,3 @@
 # Youtube-Clone
-Youtube frontend clone used HTML, CSS, Javascript
+* Youtube frontend clone used HTML, CSS, Javascript
+
